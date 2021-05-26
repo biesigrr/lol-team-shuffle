@@ -1,0 +1,28 @@
+input[type=checkbox] {
+   display: none;
+}
+
+input[type=checkbox] + label {
+    filter: grayscale(100);
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label {
+    filter: grayscale(0);
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -25%);
+}
+
+td * {
+    vertical-align: middle;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
