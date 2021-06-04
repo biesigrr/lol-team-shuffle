@@ -1,17 +1,17 @@
-input[type=checkbox] {
+.role-checkbox input[type=checkbox] {
    display: none;
 }
 
-input[type=checkbox] + label {
+.role-checkbox input[type=checkbox] + label {
     filter: grayscale(100);
     cursor: pointer;
 }
 
-input[type=checkbox]:checked + label {
+.role-checkbox input[type=checkbox]:checked + label {
     filter: grayscale(0);
 }
 
-.content {
+.somewhat-centered {
     position: absolute;
     left: 50%;
     top: 25%;
@@ -22,7 +22,15 @@ td * {
     vertical-align: middle;
 }
 
-button {
-    margin: 0 auto;
-    display: block;
+.controls {
+    text-align: center;
+}
+
+.controls p {
+    margin: 0;
+}
+
+.btn:focus, .btn:active, .btn:active:hover {
+    outline: none !important;
+    box-shadow: none;
 }
