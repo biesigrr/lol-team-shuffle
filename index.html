@@ -1,163 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="logic.js"></script>
 </head>
 
-<body>
-    <div class="content">
-        <table>
-            <tr>
-                <td>
-                    <input type="text" value="Player1" />
-                    <input type="checkbox" id="top1" checked />
-                    <label for="top1">
-                        <img src="img/top.png" alt="top" />
-                    </label>
-                    <input type="checkbox" id="jgl1" checked />
-                    <label for="jgl1">
-                        <img src="img/jgl.png" alt="jungle" />
-                    </label>
-                    <input type="checkbox" id="mid1" checked />
-                    <label for="mid1">
-                        <img src="img/mid.png" alt="mid" />
-                    </label>
-                    <input type="checkbox" id="adc1" checked />
-                    <label for="adc1">
-                        <img src="img/adc.png" alt="adc" />
-                    </label>
-                    <input type="checkbox" id="sup1" checked />
-                    <label for="sup1">
-                        <img src="img/sup.png" alt="sup" />
-                    </label>
-                </td>
-                <td id="td1">
-                    <b>➜</b>
-                    <img id="role1" src="img/mid.png" style="filter: grayscale(100);" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" value="Player2" />
-                    <input type="checkbox" id="top2" checked />
-                    <label for="top2">
-                        <img src="img/top.png" alt="top" />
-                    </label>
-                    <input type="checkbox" id="jgl2" checked />
-                    <label for="jgl2">
-                        <img src="img/jgl.png" alt="jungle" />
-                    </label>
-                    <input type="checkbox" id="mid2" checked />
-                    <label for="mid2">
-                        <img src="img/mid.png" alt="mid" />
-                    </label>
-                    <input type="checkbox" id="adc2" checked />
-                    <label for="adc2">
-                        <img src="img/adc.png" alt="adc" />
-                    </label>
-                    <input type="checkbox" id="sup2" checked />
-                    <label for="sup2">
-                        <img src="img/sup.png" alt="sup" />
-                    </label>
-                </td>
-                <td id="td2">
-                    <b>➜</b>
-                    <img id="role2" src="img/mid.png" style="filter: grayscale(100);" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" value="Player3" />
-                    <input type="checkbox" id="top3" checked />
-                    <label for="top3">
-                        <img src="img/top.png" alt="top" />
-                    </label>
-                    <input type="checkbox" id="jgl3" checked />
-                    <label for="jgl3">
-                        <img src="img/jgl.png" alt="jungle" />
-                    </label>
-                    <input type="checkbox" id="mid3" checked />
-                    <label for="mid3">
-                        <img src="img/mid.png" alt="mid" />
-                    </label>
-                    <input type="checkbox" id="adc3" checked />
-                    <label for="adc3">
-                        <img src="img/adc.png" alt="adc" />
-                    </label>
-                    <input type="checkbox" id="sup3" checked />
-                    <label for="sup3">
-                        <img src="img/sup.png" alt="sup" />
-                    </label>
-                </td>
-                <td id="td3">
-                    <b>➜</b>
-                    <img id="role3" src="img/mid.png" style="filter: grayscale(100);" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" value="Player4" />
-                    <input type="checkbox" id="top4" checked />
-                    <label for="top4">
-                        <img src="img/top.png" alt="top" />
-                    </label>
-                    <input type="checkbox" id="jgl4" checked />
-                    <label for="jgl4">
-                        <img src="img/jgl.png" alt="jungle" />
-                    </label>
-                    <input type="checkbox" id="mid4" checked />
-                    <label for="mid4">
-                        <img src="img/mid.png" alt="mid" />
-                    </label>
-                    <input type="checkbox" id="adc4" checked />
-                    <label for="adc4">
-                        <img src="img/adc.png" alt="adc" />
-                    </label>
-                    <input type="checkbox" id="sup4" checked />
-                    <label for="sup4">
-                        <img src="img/sup.png" alt="sup" />
-                    </label>
-                </td>
-                <td id="td4">
-                    <b>➜</b>
-                    <img id="role4" src="img/mid.png" style="filter: grayscale(100);" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" value="Player5" />
-                    <input type="checkbox" id="top5" checked />
-                    <label for="top5">
-                        <img src="img/top.png" alt="top" />
-                    </label>
-                    <input type="checkbox" id="jgl5" checked />
-                    <label for="jgl5">
-                        <img src="img/jgl.png" alt="jungle" />
-                    </label>
-                    <input type="checkbox" id="mid5" checked />
-                    <label for="mid5">
-                        <img src="img/mid.png" alt="mid" />
-                    </label>
-                    <input type="checkbox" id="adc5" checked />
-                    <label for="adc5">
-                        <img src="img/adc.png" alt="adc" />
-                    </label>
-                    <input type="checkbox" id="sup5" checked />
-                    <label for="sup5">
-                        <img src="img/sup.png" alt="sup" />
-                    </label>
-                </td>
-                <td id="td5">
-                    <b>➜</b>
-                    <img id="role5" src="img/mid.png" style="filter: grayscale(100);" />
-                </td>
-            </tr>
-        </table>
-        <button type="button" onclick="assign_roles()">Shuffle</input>
-    </div>
-</body>
+<body class="bg-white text-center d-flex h-100">
+    <div class="container d-flex p-3 mx-auto w-100 flex-column">
+        <div class="container somewhat-centered" id="content-container">
+            <div class="row">
+                <div class="col">
+                    <div class="controls">
+                        <button type="button" class="btn btn-primary" onclick="assign_roles()">Shuffle</button>
+                        <button type="button" class="btn btn-primary" onclick="delete_cookie()">Reset | Remove
+                            Cookie</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="form-check m-auto">
+                        <input class="form-check-input" type="checkbox" id="save_values_check">
+                        <label class="form-check-label" for="save_values_check">
+                            Save values as Cookie
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+</body>
 </html>
