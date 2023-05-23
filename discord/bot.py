@@ -9,12 +9,14 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 
+
 def shuffle_roles(members):
     roles = ['top', 'jgl', 'mid', 'adc', 'sup']
     random.shuffle(roles)
 
     assigned = zip(roles, members)
     return assigned
+
 
 def generate_roles_response(members):
     if len(members) == 0:
@@ -33,6 +35,7 @@ def generate_roles_response(members):
 
     return response
 
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -49,5 +52,6 @@ async def on_message(message):
         response = generate_roles_response(members)
 
         await message.channel.send(response)
+
 
 client.run(TOKEN)
