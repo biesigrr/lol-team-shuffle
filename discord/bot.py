@@ -35,7 +35,7 @@ def check_preferences(roles: List[str], members: List[Member], settings: Setting
     return True
 
 
-def shuffle_roles(members: List[Member], settings: Settings) -> List[Tuple[str, Member]] | None:
+def shuffle_roles(members: List[Member], settings: Settings) -> List[Tuple[str, Member]]:
     roles = ['top', 'jgl', 'mid', 'adc', 'sup']
     matches = False
     for _ in range(0, 10000):
